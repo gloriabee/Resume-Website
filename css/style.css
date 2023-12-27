@@ -1,0 +1,194 @@
+:root{
+    --default:#000000;
+    --navbar:#D9B1A8;
+    --heading:#9C5033;
+    --bg-color:#F6F0F8;
+
+}
+/* HTML Element */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:var(--bg-color);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    color: var(--heading);
+  }
+
+/* Container */
+.container-fluid{
+    padding:0 3%;
+}
+
+/* Navigation Bar */
+nav{
+    border-bottom:1px solid gainsboro;
+    font-family: 'PT Serif', serif;
+    background-color: var(--navbar);
+}
+.text-dark{
+    color: var(--heading) !important;
+    letter-spacing: 3px;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: var(--bg-color);
+}
+
+
+/* title section */
+
+#title ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+.social ul li>a{
+    padding: 10px 14px;
+    border-radius: 50%;
+    border: 1px solid var(--navbar);
+    color: var(--heading);
+}
+
+.social ul li>a:hover{
+    background-color:var(--navbar);
+    color: var(--bg-color);
+
+}
+
+
+/* Intro section */
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.card{
+    border: none;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 0;
+}
+
+.list-group-flush>.list-group-item{
+    border-color: var(--navbar) !important;
+}
+
+a.btn:hover{
+    background-color: var(--navbar);
+    border: none;
+}
+
+section{
+    margin-bottom:40px;
+}
+
+
+/* Experience section */
+#experience h4,#edu h4,#skill h4,#hobby h4,#portfolio h4{
+        border-bottom: double 5px;
+}
+.ex-item{
+    border-bottom: 1px solid var(--navbar);
+}
+.exp-text{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* Education section */
+.badge.bg-secondary{
+    background-color: var(--heading) !important;
+    color: var(--bg-color);
+}
+
+
+/* Skills Section */
+
+.progress-bar{
+    background-color: var(--navbar);
+}
+
+/* hobby section */
+
+#hobby .badge.bg-primary{
+    background-color: transparent !important;
+    border: 1px solid var(--heading);
+    color: var(--heading);
+}
+
+/* portfolio section */
+#portfolio .carousel-item>img{
+
+    height: 350px;
+}
+    
+
+.carousel-caption.bg-secondary{
+    /* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(217, 177, 168, 0.09) !important;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.8px);
+-webkit-backdrop-filter: blur(5.8px);
+border: 1px solid rgba(217, 177, 168, 0.3);
+}
+
+.carousel-indicators>button{
+   background-color: var(--heading) !important;
+}
+h5.pf-head{
+    color: #fff;
+}
+p.pf-head{
+    font-family: 'PT Serif', serif;
+    letter-spacing: 3px;
+}
+
+.carousel-caption>.btn{
+    width: auto;
+    border-radius: 0;
+}
+
+.carousel-caption a.btn-primary{
+    background-color: var(--heading) !important;
+    color: var(--bg-color);
+    border: 0;
+}
+
+/*  footer section */
+#footer{
+    border-top: 1px solid var(--navbar);
+}
+
+#footer p{
+    font-size: 16px;
+}
+
+
+/* Media queries */
+@media (max-width: 768px){
+    .mt-md-5{
+        margin-top: 5rem !important;
+    }
+
+    #footer p{
+        font-size: 10px;
+    }
+    .exp-text{
+        text-align: left;
+        font-size:15px;
+    }
+}
